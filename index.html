@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="style.css">
     </head>
     
@@ -50,5 +51,59 @@
             <p class="banner_texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
             <input type="search" class="banner_pesquisa" placeholder="Qual será sua próxima leitura?"> 
         </section>
+
+        <section class="carrossel">
+            <h2 class="carrossel_titulo">Últimos Lançamentos</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro ApacheKafka"></div>
+                    <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia Front-End"></div>
+                    <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro Liderança"></div>
+                    <div class="swiper-slide"><img src="img/Nodejs.svg" alt="Livro Nodejs"></div>
+                    <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro Portugol"></div>
+                    <div class="swiper-slide"><img src="img/ReactNative.svg" alt="Livro ReactNative"></div>
+                </div>
+                            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+            </div>
+        </section>
+
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 10,
+                slidesPerView: 3,   
+                // breakpoints: { ADICIONEI SOZINHO PARA FICAR ADAPTAVEL AO TAMANHO DA TELA
+                //     // when window width is >= 320px
+                //     320: {
+                //     slidesPerView: 2,
+                //     spaceBetween: 20
+                //     },
+                //     // when window width is >= 480px
+                //     480: {
+                //     slidesPerView: 3,
+                //     spaceBetween: 30
+                //     },
+                //     // when window width is >= 640px
+                //     640: {
+                //     slidesPerView: 4,
+                //     spaceBetween: 40
+                //     }
+                // }
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true, //ADICIONEI SOZINHO PARA CLICAR NAS BOLINHAS
+                },
+            });
+        </script>
     </body>
 </html>
