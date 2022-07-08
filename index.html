@@ -81,6 +81,11 @@
             const swiper = new Swiper('.swiper', {
                 spaceBetween: 10,
                 slidesPerView: 3,   
+                loop: true,
+                effect: 'cube',
+                cubeEffect: { //Adicionei para dar o efeito de cubo
+                    slideShadows: false,
+                },
                 // breakpoints: { ADICIONEI SOZINHO PARA FICAR ADAPTAVEL AO TAMANHO DA TELA
                 //     // when window width is >= 320px
                 //     320: {
