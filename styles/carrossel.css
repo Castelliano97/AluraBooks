@@ -37,4 +37,41 @@
 
 .card{
     background: var(--branco);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 20px 24px;
+    padding: 1em;
+}
+
+.descricao_titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.descricao_livro{
+    color: var(--azul);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0.5em 0;
+}
+
+.descricao_texto{
+    font-size: 14px;
+    padding: 0 0 1em;
+}
+
+.descricao_imagem{
+    padding: 0 0 24px;
+}
+
+.botoes_item{
+    padding: 0 0.5em ;
+}
+
+.botao_saibamais{
+    background: var(--laranja);
+    padding: 1em 2.2em;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
 }
