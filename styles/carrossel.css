@@ -20,3 +20,21 @@
     position: initial;
     margin: 12px 0 1em;
 }
+
+.card_descricao{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes{
+    display: flex;
+}
+
+.card{
+    background: var(--branco);
+}
