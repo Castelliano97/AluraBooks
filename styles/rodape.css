@@ -1,0 +1,12 @@
+hr{
+    margin: 0;
+}
+.rodape{
+    display: flex;
+    background: var(--cor-rodape);
+}
+
+.rodape_titulo{
+    font-weight: 400;
+    margin: 1em;
+}
