@@ -43,6 +43,9 @@
     padding: 1em;
 }
 
+.descricao_estrelinhas{
+    padding: 0 0 0.5em;
+}
 .descricao_titulo{
     color: var(--laranja);
     font-weight: 700;
