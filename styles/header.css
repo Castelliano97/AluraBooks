@@ -7,13 +7,13 @@
     display: inline-block;
 }
 
-/* .cabeçalho_menu-hamburguer:focus{
+.cabeçalho_menu-hamburguer:focus{
     background-color: var(--azul);
 }
 
 .cabeçalho_menu-hamburguer:active{
     background-color: var(--azul);
-} */
+}
 
 .cabeçalho{
     background-color: var(--branco);

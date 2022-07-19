@@ -46,6 +46,7 @@
 .descricao_estrelinhas{
     padding: 0 0 0.5em;
 }
+
 .descricao_titulo{
     color: var(--laranja);
     font-weight: 700;
@@ -55,7 +56,7 @@
     color: var(--azul);
     font-size: 18px;
     font-weight: 700;
-    padding: 0.5em 0;
+    margin: 0.5em 0;
 }
 
 .descricao_texto{
@@ -82,7 +83,7 @@
 @media screen and (min-width: 1024px){
     .carrossel_titulo{
         font-size: 26px;
-        padding-top: 1em;
+        padding-top: 2em;
     }    
 
     .swiper-pagination{
@@ -102,5 +103,10 @@
     .card{
         width: 50%;
         margin: 2em auto;
+    }
+
+    .descricao_texto{
+        font-size: 16px;
+        padding-right: 1.5em;
     }
 }
