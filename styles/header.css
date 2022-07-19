@@ -73,7 +73,15 @@
     display: none;
 }
 
+.container-texto{
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
+    .cabeçalho{
+        padding: 0 2em;
+    }
+
     .cabeçalho_menu-hamburguer, .container_coracao{
         display: none;
     }
@@ -81,6 +89,7 @@
     .container-titulo, .container-titulo-negrito {
         font-family: var(--fonte-secundaria);
         font-weight: 700;
+        font-size: 30px;    
     }   
 
     .container-titulo{
@@ -122,4 +131,22 @@
         display: none;
     }
 
+}
+
+@media screen and (min-width: 1728px) {
+    .container-texto{
+        display: block;
+        font-size: 20px;
+    }
+    
+    .container-link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .opcoes{
+        margin-right: auto;
+    }
 }
